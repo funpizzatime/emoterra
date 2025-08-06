@@ -1,24 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emoterra - Phase 2 Prototype</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Emoterra Phase 3 - Multiplayer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <canvas id="world"></canvas>
-  <div id="instructions">
-    <p>Use keys 1–5 to simulate global emotion:</p>
-    <ul>
-      <li>1: Joy</li>
-      <li>2: Rage</li>
-      <li>3: Sorrow</li>
-      <li>4: Curiosity</li>
-      <li>5: Serenity</li>
-    </ul>
+  <div id="chatbox">
+    <div id="messages"></div>
+    <input id="chat-input" type="text" placeholder="Type a message..." />
   </div>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
