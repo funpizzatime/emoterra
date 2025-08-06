@@ -1,21 +1,32 @@
-
 body {
   margin: 0;
   overflow: hidden;
-  background: black;
   font-family: sans-serif;
+  background: black;
   color: white;
 }
-canvas {
+#world {
   display: block;
   width: 100vw;
   height: 100vh;
 }
-#instructions {
+#chatbox {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   left: 10px;
   background: rgba(0,0,0,0.6);
   padding: 10px;
   border-radius: 8px;
+  width: 300px;
+}
+#messages {
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#chat-input {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
 }
